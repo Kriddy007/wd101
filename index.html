@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gradient-to-r from-blue-950 via-sky-800 to-blue-950">
+    <div class="flex justify-center items-center h-screen"><!--Entire page-->
+        <form id="user-form">
+            <div class="w-100 px-20 py-10 shadow-xl rounded-lg bg-blue-900"><!--Box-->
+                <div class="align-text-top text-5xl font-serif">
+                    <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-sky-300 to-sky-500">REGISTRATION PAGE</h1>
+                </div>
+                <div>
+                    <div class="text-left mt-5 text-3xl font-serif font-medium">
+                        <label for="name">Name</label><br>
+                    </div>
+                    <div class="mt-2">
+                        <input required type="text" id="name" name="name" class="rounded-lg w-full h-8 shadow-lg bg-sky-100">
+                    </div>
+                </div>
+                <div>
+                    <div class="text-left mt-5 text-3xl font-serif font-medium">
+                        <label for="email">Email</label><br>
+                    </div>
+                    <div class="mt-2">
+                        <input required type="email" id="email" name="email" class="rounded-lg w-full h-8 shadow-lg bg-sky-100">
+                    </div>
+                </div>
+                <div>
+                    <div class="text-left mt-5 text-3xl font-serif font-medium">
+                        <label for="password">Password</label><br>
+                    </div>
+                    <div class="mt-2">
+                        <input required type="password" id="password" name="password" class="rounded-lg w-full h-8 shadow-lg bg-sky-100">
+                    </div>
+                </div>
+                <div>
+                    <div class="text-left mt-5 text-3xl font-serif font-medium">
+                        <label for="dob">Date Of Birth</label><br>
+                    </div>
+                    <div class="mt-2">
+                        <input required type="date" id="dob" name="dob" class="rounded-lg w-full h-8 shadow-lg bg-sky-100" min="1969-10-05" max="2006-10-05">
+                    </div>
+                </div>
+                <div>
+                        <div class="mt-5 text-xl font-serif font-medium">
+                            <input required type="checkbox" id="accept" name="accept">
+                            <label for="accept">Accept Terms and Conditions.</label>
+                        </div>
+                </div>
+                <div>
+                    <div class="mt-5 text-2xl align-middle justify-center items-center flex rounded-lg font-serif font-semibold">
+                        <button type="submit" class="transition ease-in-out delay-150 bg-red-200 hover:-translate-y-1 hover:scale-110 hover:bg-violet-500 duration-300 rounded-lg">Submit</button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </form>
+
+    </div>
+<script src="index.js"></script>
+    <div
+        class="relative px-20 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10 font-serif">
+        <div class="mx-auto px-10 bg-blue-900 text-sky-100 rounded-lg">
+            <h2 class="text-3xl text-center font-bold leading-tight">Entries</h2>
+            <div class="divide-y divide-gray-300/50 text-center" id="user-entries"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
